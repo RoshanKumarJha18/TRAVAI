@@ -1,4 +1,5 @@
-var tl=gsap.timeline()
+function gsapanime(){
+  var tl=gsap.timeline()
 
 
 tl.from(".nav-bar",{
@@ -15,10 +16,11 @@ tl.from("#aibtn",{
     y:50,
     opacity:0
 })
+}
 
 
-
-gsap.registerPlugin(ScrollTrigger);
+function locomotivejs(){
+  gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
@@ -45,3 +47,11 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+
+}
+
+gsapanime()
+locomotivejs()
+
+
+

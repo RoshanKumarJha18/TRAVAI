@@ -14,6 +14,8 @@ html,body{
     width: 100%;
 }
 body{
+    /* #8bd878 */
+    /* #78d8ab */
     background: linear-gradient(rgb(47, 47, 59),#10101E);
 }
 .page1{
@@ -114,7 +116,7 @@ body{
     font-size: 2.3vh;
  }
  #aibtn:hover{
-    background: linear-gradient(90deg, #F2F3F0, #C1C0C7);
+    background: linear-gradient(90deg, #daa6ee, #C1C0C7);
     color:#262633;
     font-weight: 900;
     cursor: pointer;
@@ -129,6 +131,56 @@ body{
  .page2{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#10101E,rgb(47, 47, 59));
+    /* background:linear-gradient() */
     position: relative;
  }
+
+ .text-box{
+    width: 100%;
+    overflow: hidden;
+    /* background: rgb(204, 24, 24); */
+    padding: 10px 0;
+    position: relative;
+    background-color: white;
+    
+ }
+ .text-box h2{
+    
+    display: inline-block;
+    white-space: nowrap;
+    color: rgb(0, 0, 0);
+    /* -webkit-text-stroke: 1px white; */
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 800;
+    margin-right: 10px;
+    animation-name: animes;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animes {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+    
+}
+.video-box{
+    margin:4vw 12.5%;
+    height: 75%;
+    width: 75%;
+    background-color: red;
+    border-radius: 20vh;
+}
+.video-box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vh;
+}
