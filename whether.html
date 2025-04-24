@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="whether.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h2>Check Current Weather</h2>
+    <input type="text" id="locationInput" placeholder="Enter location" aria-label="Enter location">
+    <div id="suggestions"></div>
+    <button onclick="getWeather()">Get Weather</button>
+    <div class="recent" id="recentSearches"></div>
+    <div id="weatherResult"></div>
+  </div>
+
+  <script src="whether.js"></script>
+</body>
+</html>
