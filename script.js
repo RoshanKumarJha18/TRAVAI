@@ -1,24 +1,3 @@
-function gsapanime(){
-  var tl=gsap.timeline()
-
-
-tl.from(".nav-bar",{
-    y:-1000,
-    duration:1.5,
-    opacity:0
-})
-tl.from(".content h1 ,p",{
-    y:200,
-    duration:1,
-    
-})
-tl.from("#aibtn",{
-    y:50,
-    opacity:0
-})
-}
-
-
 function locomotivejs(){
   gsap.registerPlugin(ScrollTrigger);
 
@@ -49,9 +28,88 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
+function gsapanime(){
+  var tl=gsap.timeline()
 
-gsapanime()
+
+tl.from(".nav-bar",{
+    y:-1000,
+    duration:1.5,
+    opacity:0
+})
+tl.from(".content h1 ,p",{
+    y:310,
+    duration:1,
+    
+})
+tl.from("#aibtn",{
+    y:50,
+    opacity:0
+})
+tl.from(".page3  .p3box h1",{
+  y:-310,
+  opacity:0,
+  duration:1,
+  scrollTrigger:{
+    trigger:".page3",
+    scroller:"#main",
+    // markers:true,
+    start:"top 60%",
+    end:"top 30%",
+    }  
+})
+tl.from(".page4  .p4box h1",{
+  y:-310,
+  opacity:0,
+  duration:5,
+  scrollTrigger:{
+    trigger:".page4",
+    scroller:"#main",
+    // markers:true,
+    start:"top 60%",
+    end:"top 30%",
+   
+
+  }
+  
+})
+tl.from(".page5  .p5box h1",{
+  y:-310,
+  opacity:0,
+  duration:1.5,
+  scrollTrigger:{
+    trigger:".page5",
+    scroller:"#main",
+    // markers:true,
+    start:"top 60%",
+    end:"top 30%",
+   
+
+  }
+  
+})
+
+tl.from(".page6  .p6box h1",{
+  y:-310,
+  opacity:0,
+  duration:1.5,
+  scrollTrigger:{
+    trigger:".page6",
+    scroller:"#main",
+    // markers:true,
+    start:"top 60%",
+    end:"top 30%",
+   
+
+  }
+  
+})
+
+
+}
 locomotivejs()
+gsapanime()
+
 
 
 

@@ -14,6 +14,7 @@ html,body{
     width: 100%;
 }
 body{
+    overflow: hidden;
     /* #8bd878 */
     /* #78d8ab */
     background: linear-gradient(rgb(47, 47, 59),#10101E);
@@ -112,7 +113,7 @@ body{
     border: 2px solid rgb(61, 57, 57);
     border-radius: 7vw;
     margin-top: 4vw;
-    margin-left: calc(45%);
+    margin-left: 42%;
     font-size: 2.3vh;
  }
  #aibtn:hover{
@@ -171,11 +172,11 @@ body{
     
 }
 .video-box{
-    margin:4vw 12.5%;
-    height: 75%;
-    width: 75%;
-    background-color: red;
-    border-radius: 20vh;
+    margin:4vw 0;
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    /* border-radius: 20vh; */
 }
 .video-box video{
     height: 100%;
@@ -183,4 +184,78 @@ body{
     object-fit: cover;
     object-position: center;
     border-radius: 2vh;
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    
+}
+.page3 .p3box{
+    margin-top: 3vw;
+    height: fit-content;
+    width: 68vw;
+    overflow: hidden;
+    margin:3vw 17%;
+    /* background-color: red; */
+}
+.page3 h1{
+    
+    font-size: 7vw;
+}
+
+.page4{
+    height: 100vh;
+    width: 100%;
+}
+.page4 h1{
+    
+    font-size: 7vw;
+}
+.page4 .p4box{
+    margin-top: 3vw;
+    height: fit-content;
+    width: 45vw;
+    overflow: hidden;
+    margin:3vw 28%;
+    /* background-color: red; */
+}
+
+.page5{
+    height: 100vh;
+    width: 100%;
+}
+.page5 h1{
+    
+    font-size: 7vw;
+}
+.page5 .p5box{
+    margin-top: 3vw;
+    height: fit-content;
+    width: 45vw;
+    overflow: hidden;
+    margin:3vw 28%;
+    /* background-color: red; */
+}
+.page6{
+    height: 100vh;
+    width: 100%;
+}
+.page6 h1{
+    
+    font-size: 7vw;
+}
+.page6 .p6box{
+    margin-top: 3vw;
+    height: fit-content;
+    width: 45vw;
+    overflow: hidden;
+    margin:3vw 28%;
+    /* background-color: red; */
+}
+.footer-box{
+    height: 85vh;
+    width: 90%;
+    background:linear-gradient(rgb(116, 115, 115),rgb(78, 74, 73));
+    margin-left: 5%;
+    border-radius: 2vw;
 }
