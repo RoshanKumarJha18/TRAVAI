@@ -12,6 +12,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 body{
     overflow: hidden;
@@ -191,7 +192,7 @@ body{
     
 }
 .page3 .p3box{
-    margin-top: 3vw;
+    margin-top: 5vw;
     height: fit-content;
     width: 68vw;
     overflow: hidden;

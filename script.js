@@ -1,4 +1,9 @@
 function locomotivejs(){
+  
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#main'),
+  smooth: true
+});
   gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
@@ -46,10 +51,10 @@ tl.from("#aibtn",{
     y:50,
     opacity:0
 })
-tl.from(".page3  .p3box h1",{
+gsap.from(".page3  .p3box h1",{
   y:-310,
   opacity:0,
-  duration:1,
+  duration:"1.8",
   scrollTrigger:{
     trigger:".page3",
     scroller:"#main",
@@ -58,10 +63,10 @@ tl.from(".page3  .p3box h1",{
     end:"top 30%",
     }  
 })
-tl.from(".page4  .p4box h1",{
+gsap.from(".page4  .p4box h1",{
   y:-310,
   opacity:0,
-  duration:5,
+  duration:1.5,
   scrollTrigger:{
     trigger:".page4",
     scroller:"#main",
@@ -73,7 +78,7 @@ tl.from(".page4  .p4box h1",{
   }
   
 })
-tl.from(".page5  .p5box h1",{
+gsap.from(".page5  .p5box h1",{
   y:-310,
   opacity:0,
   duration:1.5,
@@ -89,7 +94,7 @@ tl.from(".page5  .p5box h1",{
   
 })
 
-tl.from(".page6  .p6box h1",{
+gsap.from(".page6  .p6box h1",{
   y:-310,
   opacity:0,
   duration:1.5,
