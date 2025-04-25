@@ -184,7 +184,7 @@ body{
     width: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 2vh;
+    /* border-radius: 2vh; */
 }
 .page3{
     height: 100vh;
@@ -196,7 +196,7 @@ body{
     height: fit-content;
     width: 68vw;
     overflow: hidden;
-    margin:3vw 17%;
+    margin:4vw 29%;
     /* background-color: red; */
 }
 .page3 h1{
@@ -224,6 +224,7 @@ body{
 .page5{
     height: 100vh;
     width: 100%;
+    margin-top: 6vw;
 }
 .page5 h1{
     
@@ -234,7 +235,7 @@ body{
     height: fit-content;
     width: 45vw;
     overflow: hidden;
-    margin:3vw 28%;
+    margin:3vw 33%;
     /* background-color: red; */
 }
 .page6{
@@ -259,4 +260,212 @@ body{
     background:linear-gradient(rgb(116, 115, 115),rgb(78, 74, 73));
     margin-left: 5%;
     border-radius: 2vw;
+    position: relative;
+    z-index: 99999;
+}
+.gallery-box{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2vw 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.gallery-box1{
+    height: 22vw;
+    width: 18vw;
+    /* background-color: blue; */
+    border-radius: 2vh;
+    margin-right: 3vh;
+    margin-bottom: 2vh;
+    
+}
+.gallery-box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:2vh ;
+}
+
+  .page6{
+    height: 100vh;
+    width: 100%;
+    margin-top: 4.2vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page6 .daba{
+    height: 42vw;
+    width: 80vw;
+    /* background-color: white */
+    border: 1px solid rgb(150, 133, 133);
+    border-radius: 2vh;
+  }
+  .page6 .daba{
+    font-size: 5vw;
+    text-align: center;
+  }
+  .page6 h2{
+    font-size: 7vw;
+    margin: 8vw 2vw;
+    color: white;
+  }
+  .page6 #mail{
+    color: #FC626A;
+  }
+  .page6 #mail:hover{
+    text-decoration:line-through;
+  }
+  .page6 #instagram{
+    color:#F6BA53;
+  }
+  .page6 #instagram:hover{
+    text-decoration: line-through;
+  }
+  .page6 #linkedIn{
+    color: #51CDE7;
+  }
+  .page6 #linkedIn:hover{
+    text-decoration: line-through;
+  }
+ 
+  .weather-container {
+    margin: 4vw 4vw;
+    border: 1px solid white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  .weather-container span{
+    color: black;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #007BFF;
+  }
+  input[type="text"] {
+    color: black;
+    padding: 12px;
+    width: calc(100% - 90px);
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    font-family: gilroy;
+  }
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  #suggestions {
+    position: absolute;
+    background: #fff;
+    width: calc(100% - 80px);
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    top: 12vh;
+    z-index: 100;
+    color: black;
+  }
+  #suggestions div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: black;
+  }
+  #suggestions div:hover {
+    background-color: #f2f2f2;
+  }
+  #weatherResult {
+    margin-top: 25px;
+  }
+  #weatherResult h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  #weatherResult p {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+  #weatherResult img {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+  }
+  .recent {
+    margin-top: 15px;
+  }
+  .recent span {
+    background: #e1e1e1;
+    padding: 6px 12px;
+    margin: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+ .page3 .p3contain {
+    width: 100%;
+    height: fit-content;
+    /* background-color: blue; */
+    display: flex;
+ }
+ .sosdaba{
+    background-color: red;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 20vw;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* right:2%; */
+ }
+ 
+
+.sosdaba:hover{
+    transform: scale(1.07);
+    transition-timing-function: all linear 0.2;
+    cursor: pointer;
+}
+.sosdaba p{
+    font-size: 3vw;
+    margin: 1vw 1vw;
+    color: white;
+    font-weight: 800;
+}
+.sos-bo{
+   /* background-color: green; */
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 2vw;
+   flex-direction: column;
+   align-items: center;
+}
+.textdaba{
+    width: 40vw;
+    text-align: center;
 }

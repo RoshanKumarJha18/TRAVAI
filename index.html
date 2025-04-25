@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="shortcut icon" href="Assests/android-chrome-512x512.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <div id="main" data-scroll-container>
         <div class="page1" data-scroll data-scroll-speed="5">
+           
             <div class="nav-bar">
                 <div class="img"><img src="Assests/t.png" alt=""></div>
                 <a href="">Home</a>
-                <a href="">Explore Destinations</a>
-                <a href="">Travel Gallery</a>
-                <a href="">Travel Map</a>
-                <a href="">Contact</a>
+                <a href="page3.html">Quick Scope</a>
+                <a href="#page4">Travel Gallery</a>
+                
+                <a href="#page6">Contact</a>
             </div>
             <div class="content">
                 <h1 class="h1con">Travel Trip With TRAV<span>AI</span></h1>
                 <p>AI-powered travel planner <br> for smart, seamless adventures worldwide.</p>
             </div>
-            <a href="whether.html"><button id="aibtn">✨ Ask TRAVAI</button></a>
+            
+            <a href=""><button id="aibtn">✨ Ask TRAVAI</button></a>
         </div>
-        <div class="page2" data-scroll>
+        <div id="page1" class="page2" data-scroll>
             <div class="text-box">
                 <h2>Discover hidden gems around the world • Plan your next adventure with AI-powered travel tips • Capture unforgettable moments • Explore tropical beaches, snowy peaks, and vibrant cities • Personalized itineraries just for you • Travel smart, travel light • Your journey starts here with TravAI • Let the world be your playground • Go beyond the map with intelligent exploration • Pack your bags and let AI be your guide!</h2>
             </div>
@@ -36,23 +39,68 @@
            </div>
 
         </div>
-        <div class="page3"><div class="p3box"><h1>Explore Destinations</h1></div></div>
-        <div class="page4">
-            <div class="p4box"><h1>Travel Gallery</h1></div>
-            
+        <div data-scroll id="page3" class="page3"><div class="p3box"><h1>Quick Scope</h1></div>
+        <div class="p3contain">
+            <div class="weather-container">
+                <h2>Check Current Weather</h2>
+                <input type="text" id="locationInput" placeholder="Enter location" aria-label="Enter location">
+                <div id="suggestions"></div>
+                <button onclick="getWeather()">Get Weather</button>
+                <div class="recent" id="recentSearches"></div>
+                <div id="weatherResult"></div>
+                
+              </div>
+            <div class="sos-bo">
+                <div class="sosdaba"><p>SOS</p></div>
+                <div class="textdaba"><p>On click, your location will be instantly shared with the Police, Ambulance, and Fire Brigade.</p></div>
+            </div>
+    
         </div>
-        <div class="page5"><div class="p5box"><h1>Travel Map</h1></div></div>
-        <div class="page6">
-            
-        <div class="footer-box">
-            <div class="p6box"><h1>Contact Us</h1>
-                <div class="foot-box">
-                    <div class="box1"></div>
-                    <div class="box2"></div>
-                    <div class="box3"></div>
+        
+        </div>
+        <div data-scroll id="page4" class="page4">
+            <div class="p4box"><h1>Travel Gallery</h1></div>
+            <div class="gallery-box">
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://images.unsplash.com/photo-1732449102690-5d48670c62dd?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div  class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://images.unsplash.com/photo-1706599452122-e74ded244564?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://images.unsplash.com/photo-1705756569166-1eb6ae8554a2?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://imgs.search.brave.com/fDnQ6NTJG--kimXT0nKzkMDShXFo1v324JgxqTaWs_Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzA1LzgzLzA0/LzM2MF9GXzIwNTgz/MDQ2OF9IeWhkMklq/QUJ6ZGlpRGNoZVR4/b3RXUjlTV0NpR2p0/Ti5qcGc" alt="">
+                </div>
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://imgs.search.brave.com/-WLo0EKcZpDz8HVYskegriz7dS9OGzkU5Hzqp6AvIlA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzQ2L2I0/LzAxLzQ2YjQwMWFj/M2MxZjgwMjg3ZjIy/YzE0N2Y5MjJhMjY5/LmpwZw" alt="">
+                </div>
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://imgs.search.brave.com/_TgiD7_PqKU53r16u6_vJffxKrMDGWnpmFkJgnetpHY/rs:fit:860:0:0:0/g:ce/aHR0cDovL3BhcmFk/aXNlLWtlcmFsYS5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxMy8wNC9L/b3ZhbGFtQmVhY2gt/S2VyYWxhLmpwZw" alt="">
+                </div>
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://imgs.search.brave.com/wk1cYdKUEUm_reUWi5Bkhhod4gDC3xMalicZmDxbAjk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIz/Mzg0NDgxL3Bob3Rv/L21vcmppbS1iZWFj/aC1nb2EtaW5kaWEu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXNjVHpzcUtnX3d5/ajhvZGxNQkZpTEx1/ckFsM1lYSE5hWXVz/MDFyaEdmSU09" alt="">
+                </div>
+                <div class="gallery-box1">
+                    <img data-scroll data-scroll-speed="2" src="https://imgs.search.brave.com/Y1PWyMlddFUWT_mALoIK8sZu6fxT8uW239c0yvYT8Kc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU1LzgwLzkz/LzM2MF9GXzU1ODA5/MzA5X3B2MGlrYkh6/RHJyWlVCb1JURFlZ/TjZHdjRJdlV1V0Va/LmpwZw" alt="">
                 </div>
             </div>
+            
         </div>
+       <div data-scroll class="page6">
+        <div class="daba">
+            <div class="cont">
+            <h2>you can get in touch
+                with me via <span id="mail">mail</span> or <span id="instagram">instagram</span> or <span id="linkedIn">linkedIn</span>.</h2>
+                
+            </div>
+       </div>
+        
+          
+            
+            
+              
     </div>
        
     </div>
@@ -60,7 +108,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
-    
+    <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/04/24/17/20250424170243-R8MDZC6Z.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
