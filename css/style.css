@@ -1,6 +1,6 @@
 @font-face {
     font-family: gilroy;
-    src: url(Fonts/Gilroy-Regular.ttf);
+    src: url(../Fonts/Gilroy-Regular.ttf);
 }
 *{
     margin: 0;
@@ -12,10 +12,12 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
 }
 body{
-    overflow: hidden;
+  scroll-behavior: smooth;
+    /* overflow: hidden; */
     /* #8bd878 */
     /* #78d8ab */
     background: linear-gradient(rgb(47, 47, 59),#10101E);
@@ -300,7 +302,7 @@ body{
     align-items: center;
   }
   .page6 .daba{
-    height: 42vw;
+    height: 32vw;
     width: 80vw;
     /* background-color: white */
     border: 1px solid rgb(150, 133, 133);
@@ -311,24 +313,28 @@ body{
     text-align: center;
   }
   .page6 h2{
-    font-size: 7vw;
-    margin: 8vw 2vw;
+    font-size: 4vw;
+    margin: 3vw 2vw;
     color: white;
   }
   .page6 #mail{
     color: #FC626A;
+    cursor: pointer;
   }
   .page6 #mail:hover{
     text-decoration:line-through;
+    
   }
   .page6 #instagram{
     color:#F6BA53;
+    cursor: pointer;
   }
   .page6 #instagram:hover{
     text-decoration: line-through;
   }
   .page6 #linkedIn{
     color: #51CDE7;
+    cursor: pointer;
   }
   .page6 #linkedIn:hover{
     text-decoration: line-through;

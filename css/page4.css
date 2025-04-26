@@ -1,0 +1,67 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../Fonts/Gilroy-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+body{
+  scroll-behavior: smooth;
+    /* overflow: hidden; */
+    /* #8bd878 */
+    /* #78d8ab */
+    background: linear-gradient(rgb(47, 47, 59),#10101E);
+}
+.page4{
+    height: 200vh;
+    width: 100%;
+}
+.page4 h1{
+    
+    font-size: 7vw;
+}
+.page4 .p4box{
+    margin-top: 3vw;
+    height: fit-content;
+    width: 45vw;
+    overflow: hidden;
+    margin:3vw 28%;
+    /* background-color: red; */
+}
+.gallery-box{
+    
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2vw 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.gallery-box1{
+    height: 22vw;
+    width: 18vw;
+    /* background-color: blue; */
+    border-radius: 2vh;
+    margin-right: 3vh;
+    margin-bottom: 2vh;
+    
+}
+.gallery-box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:2vh ;
+}

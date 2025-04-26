@@ -1,14 +1,19 @@
+  window.addEventListener('load', function () {
+    const btn = document.getElementById("aibtn");
+    if (btn) {
+      btn.addEventListener("click", function() {
+        if (window.botpress) {
+          window.botpress.toggle(true); // <- This will open the chat!
+        } else {
+          console.error("Botpress not loaded yet!");
+        }
+      });
+    }
+  });
 
 
 
 function locomotivejs(){
-  
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#main'),
-  smooth: true
-});
-  gsap.registerPlugin(ScrollTrigger);
-
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
 const locoScroll = new LocomotiveScroll({
@@ -54,7 +59,7 @@ tl.from("#aibtn",{
     y:50,
     opacity:0
 })
-gsap.from(".page3 .p3box h1", {
+gsap.from(".page3  h1", {
   y: -150,
   opacity: 0,
   duration: 1,
@@ -63,7 +68,7 @@ gsap.from(".page3 .p3box h1", {
     scroller: "#main",  // required with Locomotive Scroll
     start: "top 90%",
     end:"top 10%",
-    toggleActions: "play none none none", // only play once
+     // only play once
     // scrub: true, // optional if you want scroll-linked movement
     // markers: true
   }
@@ -101,21 +106,21 @@ gsap.from(".page5  .p5box h1",{
   
 })
 
-gsap.from(".page6  .p6box h1",{
-  y:-310,
-  opacity:0,
-  duration:1,
-  scrollTrigger:{
-    trigger:".page6",
-    scroller:"#main",
-    // markers:true,
-    start:"top 60%",
-    end:"top 30%",
+// gsap.from(".page6  .p6box h1",{
+//   y:-310,
+//   opacity:0,
+//   duration:1,
+//   scrollTrigger:{
+//     trigger:".page6",
+//     scroller:"#main",
+//     // markers:true,
+//     start:"top 60%",
+//     end:"top 30%",
    
 
-  }
+//   }
   
-})
+// })
 gsap.from(".gallery-box1", {
   scrollTrigger: {
     trigger: ".gallery-box",

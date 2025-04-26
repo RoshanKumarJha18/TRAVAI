@@ -3,61 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAV-AI</title>
+    <title>Travel Gallery</title>
+    <link rel="stylesheet" href="../css/page4.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="shortcut icon" href="Assests/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Assests/android-chrome-512x512.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
-    
-    <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
-    <div id="main" data-scroll-container>
-        <div class="page1" data-scroll data-scroll-speed="5">
-           
-            <div class="nav-bar">
-                <div class="img"><img src="Assests/t.png" alt=""></div>
-                <a href="">Home</a>
-                <a href="pages/page3.html">Quick Scope</a>
-                <a href="pages/page4.html">Travel Gallery</a>
-                
-                <a href="pages/page6.html">Contact</a>
-            </div>
-            <div class="content">
-                <h1 class="h1con">Travel Trip With TRAV<span>AI</span></h1>
-                <p>AI-powered travel planner <br> for smart, seamless adventures worldwide.</p>
-            </div>
-            
-            <button id="aibtn">✨ Ask TRAVAI</button>
-        </div>
-        <div id="page1" class="page2" data-scroll>
-            <div class="text-box">
-                <h2>Discover hidden gems around the world • Plan your next adventure with AI-powered travel tips • Capture unforgettable moments • Explore tropical beaches, snowy peaks, and vibrant cities • Personalized itineraries just for you • Travel smart, travel light • Your journey starts here with TravAI • Let the world be your playground • Go beyond the map with intelligent exploration • Pack your bags and let AI be your guide!</h2>
-            </div>
-           <div class="video-box"data-scroll data-scroll-speed="1">
-            <video src="Assests/TRAVAIVID.mp4" autoplay muted loop></video>
-           </div>
-
-        </div>
-        <div data-scroll id="page3" class="page3"><div class="p3box"><h1>Quick Scope</h1></div>
-        <div class="p3contain">
-            <div class="weather-container">
-                <h2>Check Current Weather</h2>
-                <input type="text" id="locationInput" placeholder="Enter location" aria-label="Enter location">
-                <div id="suggestions"></div>
-                <button onclick="getWeather()">Get Weather</button>
-                <div class="recent" id="recentSearches"></div>
-                <div id="weatherResult"></div>
-                
-              </div>
-            <div class="sos-bo">
-                <div class="sosdaba"><p>SOS</p></div>
-                <div class="textdaba"><p>On click, your location will be instantly shared with the Police, Ambulance, and Fire Brigade.</p></div>
-            </div>
-    
-        </div>
-        
-        </div>
+    <div id="main">
         <div data-scroll id="page4" class="page4">
             <div class="p4box"><h1>Travel Gallery</h1></div>
             <div class="gallery-box">
@@ -88,30 +42,14 @@
             </div>
             
         </div>
-       <div data-scroll class="page6">
-        <div class="daba">
-            <div class="main-box"><h1>Contact</h1></div>
-            <div class="cont">
-            <h2>you can get in touch
-                with me via <span id="mail">mail</span> or <span id="instagram">instagram</span> or <span id="linkedIn">linkedIn</span>.</h2>
-                
-            </div>
-       </div>
-       
-       
-       
-       
-       
     </div>
-    <footer>made with ♥ by me © 2025</footer>
-       
-    </div>
+        
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
     <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2025/04/24/17/20250424170243-R8MDZC6Z.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/page4.js"></script>
 </body>
 </html>
